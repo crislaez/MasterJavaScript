@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio DOM, Eventos y Funciones</title>
+		<style>
+			.div{
+				width: 250px;
+				height: 250px;
+				float:left;
+				margin: 20px;
+			}
+			.dashed{
+				border: 3px dashed black;
+				padding: 5px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<h1>Ejercicio DOM, Eventos y Funciones</h1>
+
+			<div class="div">
+				<form action="#" method="POST" id="formulario" onsubmit="return false">
+					<fieldset>
+						<legend>Datos Personales</legend>
+
+
+						<!-- <p>Introdudca su nombre</p> -->
+
+						<label for="nombre">Nombre:</label> <br/>
+
+						<input id="nombre" type="text" name="nombre"/>
+						<!-- <input type="submit" value="Enviar Nombre"> -->
+						<span id="error1"></span>
+						<br/>
+						<br/>
+
+
+						<!-- <p>Introdudca su apellido</p> -->
+
+						<label for="apellido">Apellido:</label><br/>
+
+						<input id="apellido" type="text" name="apellido"/>
+						<!-- <input type="submit" value="Enviar Apellido"> -->
+						<span id="error2"></span>
+						<br/>
+						<br/>
+
+						<!-- <p>Introdudca su edad</p> -->
+
+						<label for="edad">Edad:</label><br/>
+
+						<input id="edad" type="text" name="edad"/>
+						<span id="error3"></span>
+						<!-- <input type="submit" value="Enviar Edad"> -->
+						<br/>
+						<br/>
+
+						<p><input id="submit" type="submit" value="Enviar"/></p>
+
+					</fieldset>
+				</form>
+			
+				<br/>
+				<br/>
+			</div>
+				
+
+			<div class="div dashed">
+				<p>Datos del Usuario</p>
+				<hr>
+				<p id="p_nombre">Nombre: <span></span></p>
+
+				<p id="p_apellido">Apellido: <span></span></p>
+
+				<p id="p_edad">Edad: <span></span></p>
+			</div>
+
+		<button id="botonaccion">Accion</button>
+		<script type="text/javascript" src="js/32-ejercicio_dom.js"></script>
+	</body>
+</html>
